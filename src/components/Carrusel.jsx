@@ -9,11 +9,11 @@ class Carrusel extends Component {
     this.state = {
       currentIndex: 0,
     };
-    this.images = [mueble1, mueble2, mueble3]; // Arreglo de imágenes
+    this.images = [mueble1, mueble2, mueble3];
   }
 
   componentDidMount() {
-    this.interval = setInterval(this.nextImage, 3000); // Cambia de imagen cada 3 segundos
+    this.interval = setInterval(this.nextImage, 3000);
   }
 
   componentWillUnmount() {
