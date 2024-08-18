@@ -1,46 +1,283 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+body  {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  height: 50px;
+  background-color: #F2EFE9;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 5px solid orange;
 }
 
 .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  display: flex;
+  align-items: center;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logo img {
+  height: 50px;
+
+  margin-right: 10px;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+nav a {
+  padding-right: 20px;
+  text-decoration: none;
+  color: black;
 }
 
-.card {
-  padding: 2em;
+#slider {
+  background: red;
+  width: 100%;
+  height: 350px;
+  margin-top: 20px;
 }
 
-.read-the-docs {
-  color: #888;
+#slider-image{
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
 }
 
-.componentes {
-  color: red;
+.coleccion {
+
+  background-size: 20px 20px;
+  background-position: 0 0,10px 10px;
+  overflow: hidden;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.coleccion__container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+  align-items: center;
+}
+
+.coleccion__picture{
+  max-width: 500px;
+}
+
+.coleccion__parrafo{
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.coleccion__img{
+  width: 100%;
+  display: block;
+}
+
+
+
+
+
+#reparacion_equipos {
+	display: flex;
+	justify-content: space-between;
+	margin: 20px;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.reparacion{
+	width: 25%;
+	border: 5px solid orange;
+  border-radius: 10%;
+	padding: 10px;
+	margin-bottom: 20px;
+	margin-right: 20px;
+  text-align: left;
+  height: 400px;
+}
+
+
+
+
+.reparacion h2{
+	text-align: left;
+	margin-bottom: 10px;
+	margin-top: 20px;
+  color: orange;
+}
+
+.reparacion p{
+	text-align: justify;
+	line-height: 1.5;
+  text-align: left;
+}
+
+.texto{
+	text-align: center;
+	margin: 50px;
+	color: aqua;
+}
+
+.imagenCuadro {
+  width: 98%;
+	height: 70%;
+	display: block;
+	margin: 0 auto;
+	transition: transform 0.2s ease;
+  float: left;
+}
+
+
+
+
+
+
+
+
+.conocimiento__container {
+  
+
+
+  background-size: 20px 20px;
+  background-position: 0 0,10px 10px;
+  overflow: hidden;
+}
+
+.conocimiento__container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+  align-items: center;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.conocimiento__picture{
+  max-width: 500px;
+}
+
+.conocimiento__parrafo{
+  line-height: 1.7;
+  margin-bottom: 15px;
+  height: 90%;
+}
+
+.conocimiento__img{
+  width: 100%;
+  display: block;
+}
+
+.conocimiento__texts {
+  height: 90%;
+}
+
+
+
+
+
+
+footer {
+  display: flex;
+  height: 50px;
+  background-color: #F2EFE9;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: orange;
+  background: orange;
+}
+
+.div__footer__texto {
+  display: flex;
+  align-items: center;
+  background-color: orange;
+  background: orange;
+}
+
+.nombre-empresa1 {
+  background-color: orange;
+  color: white;
+  margin-left: 50px;
+}
+.iconos a {
+  padding-right: 20px;
+  text-decoration: none;
+  color: black;
+  background-color: orange;
+}
+
+.iconos a img {
+  width: 40px;
+  background-color: orange;
+}
+
+.iconos1 {
+  height: 40%;
+  background: orange;
+}
+
+.iconos {
+  background: orange;
+  background-color: orange;
+  margin-right: 50px;
+}
+
+
+.subtitulo {
+  font-size: 70px;
+  color: orange;
+  
+}
+
+.subtitulo1 {
+  font-size: 80px;
+  margin-bottom: 0;
+}
+
+.coleccion__picture__parrafo {
+  font-size: 20px;
+}
+
+.coleccion__picture {
+  width: 80%;
+}
+
+.subtitle1, .subtitulo {
+  margin: 0;
+}
+
+.coleccion__container{
+
+  margin-top: 100px;
+  margin-bottom: 100px;
+  align-items: center;
+}
+.coleccion {
+  align-items: center;
+}
+
+.conocimiento {
+  align-items: center;
+}
+
+.botonT {
+  border-color: #F2EFE9;
+  border-right: #F2EFE9;
+  border-bottom: #F2EFE9;
+  border-left: #F2EFE9;
+  border-top: #F2EFE9;
+}
+
+
+.imgF {
+
+  width: 30px;
+  height: 30px;
+
+}
+
+.conocimiento__controls {
+  margin-left: 1000px;
+  
 }

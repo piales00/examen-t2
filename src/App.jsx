@@ -1,34 +1,25 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+
 import "./assets/css/App.css";
 
-import MiComponente from "./components/MiComponente";
-import Pizza from "./components/Pizza";
+import Header from "./components/Header";
+import Carrusel from "./components/Carrusel";
+import Coleccion from "./components/Coleccion";
+import TresCuadros from "./components/TresCuadros";
+import Cliente from "./components/Cliente";
+import Footer from "./components/Footer";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div>
-        <section className="componentes">
-          <MiComponente />
-          <Pizza />
-        </section>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Header />
+      <Carrusel />
+      <Coleccion />
+      <TresCuadros />
+      <Cliente />
+      <Footer />
     </>
   );
 }
